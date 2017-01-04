@@ -1,12 +1,14 @@
+// when we declare variables
 
-if (true){
-  var x = 20;    //var has no block scoping
-}
-var doWork = function(){
-  var x = 10;  //this x is within the function level scope
-  return x;
-}
-//the x that is defined inside of doWork is hiding or shadows the x that is
-// defined outside of that fn
-console.log(doWork());  //10
-console.log(x);  //20
+//initialize variables by assigning values
+//destuctring in python or ruby
+//set of variables by
+//tear apart and pattern matching complex data strutture like array or object
+
+
+let x = 3;
+var x = 2;  //script.js:10 Uncaught SyntaxError: Identifier 'x' has already been declared
+
+[x,y] = [y,x];
+
+console.log(x, y);
