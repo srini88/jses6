@@ -17,3 +17,7 @@ var doWork = function(){
 
 console.log(doWork());  //Uncaught SyntaxError: Identifier 'x' has already been declared
 //same error
+//very imp
+//with let and const we cannot have two variables under the same godammn scope
+
+//with var you can 
