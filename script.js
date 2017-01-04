@@ -2,8 +2,7 @@ var doWork = function (){
 
   let a = 4;
   let b = 5;
-  // return [a,b];  // [4, 5]
-  //return [x,y] = [1, 2];  // [1,2]
+  return [a,b];
 }
-
-console.log(doWork());  //[4, 5]
+  let [x,y] = doWork();  // destructuring in action
+  console.log(x, y);  // 4 5 
