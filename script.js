@@ -13,13 +13,13 @@ let add1 = (x,y) => x+y;
 //example with var
 var doWork = function(flag){
   if (flag){
-    var x = 4;
+    let x = 4;
   }
   return x;
 }
 
 console.log(doWork(true));  //4 no surprise
-console.log(doWork(false));  //undefined
-//coz x has been hoisted to the top of the function since var has function
-//level scope , we getting undefined instead of an error
-
+console.log(doWork(false));
+//Uncaught ReferenceError: x is not defined
+    // at doWork (script.js:18)
+    // at script.js:21
