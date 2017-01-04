@@ -13,7 +13,7 @@ let add1 = (x,y) => x+y;
 //example with var
 var doWork = function(flag){
   if (flag){
-    let x = 4;
+    let x = 4;  //x is only available to use inside the if block
   }
   return x;
 }
@@ -23,3 +23,6 @@ console.log(doWork(false));
 //Uncaught ReferenceError: x is not defined
     // at doWork (script.js:18)
     // at script.js:21
+
+//moving forward use the let keyword instead of var keyword to avoid this
+//implicit variable hoisting
