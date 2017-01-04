@@ -11,8 +11,8 @@ const MAX_SIZE = 10;
 //const does have block semantics
 var doWork = function(){
   const x = 12;
-  x = 10;
+  var x = 10;
   return x;
 }
 
-console.log(doWork());  //Uncaught TypeError: Assignment to constant variable.
+console.log(doWork());  //Uncaught SyntaxError: Identifier 'x' has already been declared
