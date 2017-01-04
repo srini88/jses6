@@ -8,10 +8,11 @@ var doWork = function (){
 
 //console.log(doWork());  // Objectfn: "srinivas"ln: "pv"twitter: "srini88"__proto__: Object
 
-let {a:fn, y:ln, z:twitter} = doWork();
-//a, y, z, above not working
-//console.log (a);  // not working says a is not defined //looks like you have
-//to match the keys in the objects
+let {fn:fn, ln:ln, twitter:twitter} = doWork();
 
-//console.log(a, y, z); //fail error
-
+// above is not building an obj literal
+// why object declaration then ?
+// assigning values that is returned from object thats why {} because right hand side
+// is returning an object
+console.log(fn, ln, twitter);  // srinivas pv srini88
+// fn , ln and twitter are godammn variables
