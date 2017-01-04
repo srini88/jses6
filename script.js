@@ -1,8 +1,10 @@
 var doWork = function (){
-
-  let a = 4;
-  let b = 5;
-  return [a,b];
+  return [1, 2, 3];
 }
-  let [x,y] = doWork();  // destructuring in action
-  console.log(x, y);  // 4 5 
+  let [x,y] = doWork();  // x takes value 1 and y 2, but we want x and y to take
+  // 2 and 3
+  console.log(x, y);  // 1 2
+ // so do
+
+ let [, a, b, z] = doWork();
+ console.log(a, b, z);  // 2 3 undefined what we wanted  // z is undefined
