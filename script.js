@@ -1,8 +1,8 @@
 
-let x = 20;  //moved outside here
+const x = 20;  //no issues with const as well
 
 var doWork = function(){
-  var x = 10;
+  var x = 10;  //this x is within the function level scope
   return x;
 }
 //the x that is defined inside of doWork is hiding or shadows the x that is
