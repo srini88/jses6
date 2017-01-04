@@ -1,6 +1,6 @@
 
 const x = 20;  //no issues with const as well
-
+//this const x scope is different from the functional x scope
 var doWork = function(){
   var x = 10;  //this x is within the function level scope
   return x;
