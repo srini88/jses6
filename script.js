@@ -1,23 +1,11 @@
-// varibale that will hold constant value (read only)
-//has block level scoping
-const MAX_SIZE = 10;
 
-//MAX_SIZE = 20;
+let x = 20;  //moved outside here
 
-//console.log(MAX_SIZE); //Uncaught TypeError: Assignment to constant variable.
-// semantics of true es6 const , ecma6 it is a syntax error
-
-
-//const does have block semantics
 var doWork = function(){
-  let x = 12;
   var x = 10;
   return x;
 }
-
-console.log(doWork());  //Uncaught SyntaxError: Identifier 'x' has already been declared
-//same error
-//very imp
-//with let and const we cannot have two variables under the same godammn scope
-
-//with var you can 
+//the x that is defined inside of doWork is hiding or shadows the x that is
+// defined outside of that fn
+console.log(doWork());  //10
+console.log(x);  //20
