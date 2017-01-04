@@ -35,8 +35,21 @@ we will produce code that will run on all the devices.
 
 Tracer in a browser, will let u some of the ES6 features
 
-Tracer in a plunk , it is traceur 
+Tracer in a plunk , it is traceur
+find out about ES6 compatability table
 
+---------------------------
+
+variables and parameters
+
+let and const
+using rest parameters
+
+let allows us to define variables (instead of var)
+
+var has some limitations
+var has 2 types of scope , global scope and function scope, there is no
+block scope
 
 
 
