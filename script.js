@@ -10,9 +10,9 @@ const MAX_SIZE = 10;
 
 //const does have block semantics
 var doWork = function(){
-  var x = 12;
-  var x = 10;  //this one wins and overrides
+  const x = 12;
+  x = 10;
   return x;
 }
 
-console.log(doWork());  //10
+console.log(doWork());  //Uncaught TypeError: Assignment to constant variable.
