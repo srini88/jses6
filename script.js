@@ -1,10 +1,17 @@
 var doWork = function (){
-  return [1, 2, 3];
-}
-  let [x,y] = doWork();  // x takes value 1 and y 2, but we want x and y to take
-  // 2 and 3
-  console.log(x, y);  // 1 2
- // so do
+  return {
+    fn : "srinivas",
+    ln : "pv",
+    twitter : "srini88"
+  };
+};
 
- let [, a, b, z] = doWork();
- console.log(a, b, z);  // 2 3 undefined what we wanted  // z is undefined
+//console.log(doWork());  // Objectfn: "srinivas"ln: "pv"twitter: "srini88"__proto__: Object
+
+let {a:fn, y:ln, z:twitter} = doWork();
+//a, y, z, above not working
+//console.log (a);  // not working says a is not defined //looks like you have
+//to match the keys in the objects
+
+//console.log(a, y, z); //fail error
+
